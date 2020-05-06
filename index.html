@@ -1,17 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/
+	     xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>Let's Frame This</title>
+		<script>
+			body{ 
+				background: blue;
+			}
+			iframe{
+				width: 400px;
+				height: 350px;
+			}
+		</script>
 	</head>
 	<body>
 
-  <frameset rows="30,*,30" frameborder="1">
-
-    <frame src= "header.html" name="header"/>
-    <frame src ="content.html" name = "content"/>
-    <frame src= "footer.html" name = "footer"/>
-  </frameset>
+	<ul>
+		<li><a href="header.html" target = "play">Make me pink!!</a></li>
+		<li><a href="footer.html" target = "p;ay">Make me green!!</a></li>
+	</ul>		
+		
+<iframe src="https://www.w3schools.com" name="play">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 		Let's see some Framewowrk!!
 	</body>
 </html>
